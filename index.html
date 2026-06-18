@@ -987,7 +987,7 @@ footer{
     <div class="section-eyebrow">🌸 About Me</div>
     <h2>Backend Engineer Focused on <br>Scalable, High-Performance Systems</h2>
      
-        <i><span id="last-updated">Last updated: June 2026</span></i>
+        <i><span id="last-updated">Last updated: BUILD_TIMESTAMP</span></i>
     <div class="section-bar"></div>
     <div class="about-grid">
       <div class="profile-card">
@@ -1236,7 +1236,7 @@ footer{
     <span>© 2026 Suvetha Devi R · crafted with <span class="heart">♥</span></span>
     <span class="footer-timestamp">
       <i class="fas fa-clock"></i>
-     <span id="last-updated">Last updated: June 2026</span>
+     <span id="last-updated">Last updated: BUILD_TIMESTAMP</span>
     </span>
   </footer>
 
@@ -1250,21 +1250,6 @@ window.addEventListener('scroll', () => {
   spBar.style.transform = `scaleX(${pct})`;
 }, { passive: true });
 
-// ===== UPDATE TIMESTAMPS =====
-function updateTimestamps() {
-  const now = new Date();
-  const options = { 
-    year: 'numeric', 
-    month: 'long', 
-    day: 'numeric'
-  };
-  const dateStr = now.toLocaleDateString('en-US', options);
-  
-  // Update both timestamps
-  document.getElementById('nowTimestamp').textContent = dateStr;
-  document.getElementById('footerTimestamp').textContent = dateStr;
-}
-updateTimestamps();
 
 // ===== MAGNETIC CURSOR =====
 const dot = document.getElementById('cursorDot');
